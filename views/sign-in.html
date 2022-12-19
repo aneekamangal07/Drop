@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up!</title>
+    <link rel="stylesheet" href="../public/css/sign-in.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@300&family=Sora:wght@600&display=swap" rel="stylesheet">
+    <script src="/js/sign-in.js"></script>
+</head>
+<body>
+    <section class="main">
+        <video src="/assests/sign.mp4" id="video" alt="" height="500px" loop= "true" ></video>
+        <div class="content">
+            <h1>D  R  O  P</h1>
+            <h2>Sign-up now to join our community and have a look on these intresting blogs written by and with us!</h2>
+            <div class="input">
+                <input type="text" id="email" placeholder="Email Address"><br><br>
+                <input type="text" id="password" placeholder="Password"><br><br><br><br><br>
+                <button class="continue">Continue</button>
+            </div>
+        </div>
+        </section>
+</body>
+</html>
+
+
+
+
+<% if (blogs.length > 0) { %>
+    <% blogs.forEach(blog => { %>
+        <a class = "single" href="/blogs/<%= blog._id %>">
+        <h3 class="title"><%= blog.title %></h3>
+        <p class="snippet"><%= blog.snippet %></p>
+        </a>
+        <% }) %>
+    <% } else { %>
+        <p> There are no blogs to display</p>
+        <% } %>

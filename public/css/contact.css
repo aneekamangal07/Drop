@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.form{
+    max-width: 60%;
+}
+.form-input{
+    margin: 10px 0;
+    padding: 2px 5px;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+.button{
+    padding: 4px 14px;
+    margin: 0px 3px;
+    border: 2px solid rgb(100, 59, 121);
+    border-radius: 6px;
+    font-size: 13px;
+    color: white;
+    background-color: rgb(100, 59, 121);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}

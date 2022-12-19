@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DROP</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %> 
+    <section class="first">
+        <img src="/assests/bg.svg" alt="" height="817px">
+        <div class="out-box">
+        </div>
+        <div class="content-box">
+            <h1> <span class="special-word">DROP</span>  your thoughts here!</h1>
+            <h2>A perfect place to create your own blogs and read the blogs of millions who joined us.<h2>
+            <a href="/blogs/create">
+                <button class="btn">Create!</button>
+            </a>
+        </div>
+        <div class="rect"></div>
+    </section>
+
+    <section class="second">
+        <div class="content-side">
+            <h1>Checkout our blogs!</h1>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quas ex facere iure expedita nesciunt architecto autem nulla perferendis voluptatibus!</h2>
+        </div>
+        <div class="out-box2">
+        </div>
+        <div class="in-box2">
+            <img src="/assests/Screenshot2.png" alt="" height="300px">
+        </div>
+    </section>
+
+    <section class="third">
+        <div class="out-box3">
+        </div>
+        <div class="in-box3">
+            <img src="/assests/Screenshot2.png" alt="" height="300px">
+        </div>
+        <div class="content-side">
+            <h1>Liked the blog?</h1>
+            <h2>Let them know!!<br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quas ex facere iure expedita nesciunt architecto autem nulla perferendis voluptatibus!</h2>
+        </div>
+    </section>
+    
+    <section class="fourth">
+        <div class="content-side">
+            <h1>About</h1>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quas ex facere iure expedita nesciunt architecto autem nulla perferendis voluptatibus!</h2>
+        </div>
+        <div class="out-box4">
+        </div>
+        <div class="in-box4">
+            <img src="/assests/Screenshot2.png" alt="" height="300px">
+        </div>
+    </section>
+
+    <section class="fifth">
+        <div class="blogs">
+        <h1>Featured Blogs</h1>
+            <% var featured = blogs.slice(0, 3) %>
+            <% featured.forEach(blog => { %>
+                <a class = "single" href="/blogs/<%= blog._id %>">
+                <h3 class="title"><%= blog.title %></h3>
+                <p class="snippet"><%= blog.snippet %></p>
+                </a>
+                <% }) %>     
+        </div>
+        <div class="all-Blogs">
+            <a href="/allblogs/">
+                <button class="btn all-Blogs-btn">See All Blogs</button>
+            </a>
+        </div>
+    </section>
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>

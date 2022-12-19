@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/allBlogs.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@300&family=Sora:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <title>DROP | All Blogs</title>
+    </head>
+<body>
+
+    <%- include('./partials/navbar.ejs') %> 
+    <div class="content all">
+        <h1>ALL BLOGS</h1>
+        <% if (blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+                <a class = "single" href="/blogs/<%= blog._id %>">
+                <h3 class="title"><%= blog.title %></h3>
+                <p class="snippet"><%= blog.snippet %></p>
+                </a>
+                <% }) %>
+            <% } else { %>
+                <p> There are no blogs to display</p>
+                <% } %>
+    </div>
+
+
+
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>

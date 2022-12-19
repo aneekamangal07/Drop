@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DROP</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/contact.css">
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %> 
+    
+    <div class="content">
+        <h2>Have a query, Contact Us!</h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Name">
+            <input class="form-input" type="text" name="name" id="email" placeholder="Email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Query/Feedback"></textarea>
+            <button class="button">Submit</button>
+        </div>
+    </div>
+    
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>

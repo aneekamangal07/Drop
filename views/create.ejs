@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/create.css">
+    <title>DROP | Create a new blog</title>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %> 
+    <div class="content">
+        <h2>New note</h2>
+        <form action="" method="post">
+            <label class="form-label" for="title">Blog title:</label>
+            <br>
+            <input class="form-input" type="text" id="title" name = "title" required>
+            <br>
+            <label class="form-label" for="snippet">Blog snippet:</label>
+            <br>
+            <input class="form-input" type="text" id="snippet" name = "snippet" required>
+            <br>
+            <label class="form-label" for="body">Blog body:</label>
+            <br>
+            <textarea class="form-input" id="body" name = "body" required></textarea>
+            <br>
+            <button class="button">Submit</button>
+        </form>
+    </div>
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>

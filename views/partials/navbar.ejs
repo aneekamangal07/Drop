@@ -1,0 +1,28 @@
+<nav class="navbar">
+    <div class="logo">
+        <h1>D  R  O  P</h1>
+    </div>
+    <div class="box">
+        <div class="box-left">
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="box-right">
+            <input type="text" class="search-box" placeholder="search" name="query">
+            <a href="/blogs/<%= blog._id %>">
+                <button class="search">Search</button>
+            </a>
+            <% var input = document.querySelector('input.search-box').value %> 
+
+                <% console.log(blog.title.includes(input))%> 
+
+        </div>
+    </div>
+</nav>
+
+<!-- <script>
+    var input = document.querySelector('input.search-box').value;
+</script> -->

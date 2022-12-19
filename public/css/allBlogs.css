@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    min-height: auto;
+}
+.all h1{
+    padding-top: 75px;
+    padding-bottom: 10px;
+}
